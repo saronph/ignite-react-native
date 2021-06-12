@@ -57,9 +57,11 @@ export default function Dashboard() {
               <S.UserGreetings>Olá,</S.UserGreetings>
               <S.UserName>Saron</S.UserName>
             </S.User>
-          </S.UserInfo>  
+          </S.UserInfo> 
 
-          <S.Icon name='power' />        
+          <S.LogoutButton onPress={() => {}}>
+            <S.Icon name='power' />  
+          </S.LogoutButton>      
         </S.UserWrapper>
       </S.Header>
       
