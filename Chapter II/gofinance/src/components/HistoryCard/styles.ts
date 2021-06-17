@@ -16,6 +16,7 @@ export const Container = styled.View<ContainerProps>`
   padding: 13px 24px;
   border-left-width: 4px;
   border-left-color: ${({color}) => color};
+  border-radius: 5px;
 
   margin-bottom: 8px;
 `;
