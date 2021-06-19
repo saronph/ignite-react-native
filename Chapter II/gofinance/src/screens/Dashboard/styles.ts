@@ -13,6 +13,12 @@ export const Container = styled.View`
   background-color: ${props => props.theme.colors.background};
 `;
 
+export const LoadContainer = styled.View`
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+`;
+
 export const Header = styled.View`
   width: 100%;
   height: ${RFPercentage(42)}px;
@@ -104,8 +110,4 @@ export const TransactionList = styled(
   }
 })``;
 
-export const LoadContainer = styled.View`
-  flex: 1;
-  justify-content: center;
-  align-items: center;
-`;
+
