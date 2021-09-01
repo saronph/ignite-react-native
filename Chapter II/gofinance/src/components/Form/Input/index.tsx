@@ -4,12 +4,13 @@ import { TextInputProps } from 'react-native';
 import * as S from './styles';
 
 interface Props extends TextInputProps {
+  active?: boolean;
   error: string;
 }
 
-const Input = ({error, ...rest}: Props) => {
+const Input = ({ active = false, error, ...rest}: Props) => {
   return (
-  <S.Container error={error} {...rest} />
+  <S.Container active={active} error={error} {...rest} />
   );
 }
 

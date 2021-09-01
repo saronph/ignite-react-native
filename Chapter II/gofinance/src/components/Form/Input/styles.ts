@@ -3,6 +3,7 @@ import { TextInput } from 'react-native';
 import { RFValue } from 'react-native-responsive-fontsize';
 
 interface Props {
+  active?: boolean;
   error: string;
 }
 
@@ -21,5 +22,10 @@ export const Container = styled(TextInput)<Props>`
     margin: 0;
   ` : css`
     margin-bottom: 8px;
+  `};
+
+  ${({ active, theme }) => active && css`
+    border-width: 3px;
+    border-color: ${theme.colors.attention};
   `};
 `;
