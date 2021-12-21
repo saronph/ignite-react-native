@@ -19,7 +19,6 @@ export default function Home() {
       id: String(new Date().getTime()),
       name: newSkill
     }
-    console.log('add')
 
     setMySkills(oldState => [...oldState, data])
   }
