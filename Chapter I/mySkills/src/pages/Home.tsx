@@ -45,20 +45,21 @@ export default function Home() {
   
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Bem vindo, Saron</Text>
+      <Text style={styles.title} testID="welcome">Bem vindo, Saron</Text>
 
       <Text style={styles.greetings}>
         {greetings}
       </Text>
 
       <TextInput 
+        testID="input-new"
         style={styles.input}
         placeholder={'New skill'} 
         placeholderTextColor='#999'
         onChangeText={setNewSkill}
       />
 
-      <Button title={'Adicionar'} onPress={handleAddNewSkill} />
+      <Button testID="button-add" title={'Adicionar'} onPress={handleAddNewSkill} />
 
       <Text style={[styles.title, {marginTop: 20, marginBottom: 16}]}>
         My skills
